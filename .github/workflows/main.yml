@@ -15,7 +15,7 @@ jobs:
         run: cd android && ./gradlew assembleRelease
 
       - name: Upload myshop
-        uses: actions/upload-myshop@v1
+        uses: actions/upload-artifact@v1
         with:
           name: release
           path: android/app/build/outputs/apk/release/app-release.apk
