@@ -9,20 +9,22 @@ import Login from '../screens/Auth/Login';
 import ForgotPassword from '../screens/Auth/ForgotPassword';
 import VerifyCode from '../screens/Auth/VerifyCode';
 import NewPassword from '../screens/Auth/NewPassword';
+import Home from '../screens/Home/Home';
 
 const Stack = createNativeStackNavigator();
 
 const StackNav = () => {
   return (
     <Stack.Navigator screenOptions={{ headerShown: false }}>
-      {/* <Stack.Screen name='Splash' component={SplashScreen} />
-      <Stack.Screen name='Onboard' component={Onboard} />
-      <Stack.Screen name='Auth' component={Auth} />
-      <Stack.Screen name='Signup' component={Signup} />
-      <Stack.Screen name='Login' component={Login} /> */}
+      {/* <Stack.Screen name='Splash' component={SplashScreen} /> */}
+      {/* <Stack.Screen name='Onboard' component={Onboard} /> */}
+      {/* <Stack.Screen name='Auth' component={Auth} /> */}
+      {/* <Stack.Screen name='Signup' component={Signup} /> */}
+      {/* <Stack.Screen name='Login' component={Login} /> */}
       {/* <Stack.Screen name='Forgot' component={ForgotPassword} /> */}
       {/* <Stack.Screen name='VerifyCode' component={VerifyCode} /> */}
-      <Stack.Screen name='NewPassword' component={NewPassword} />
+      {/* <Stack.Screen name='NewPassword' component={NewPassword} /> */}
+      <Stack.Screen name='Home' component={Home} />
     </Stack.Navigator>
   )
 }

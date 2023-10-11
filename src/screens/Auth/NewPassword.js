@@ -7,7 +7,7 @@ import {Colors} from '../../utils';
 import CButton from '../../components/CButton';
 import { NativeModules } from 'react-native';
 
-const {ToastModule,DropdownModule} = NativeModules;
+const {ToastModule} = NativeModules;
 
 const NewPassword = () => {
   const [isKeyboardVisible, setKeyboardVisible] = useState(false);
@@ -31,11 +31,6 @@ const NewPassword = () => {
       keyboardDidHideListener.remove();
     };
   }, []);
-  const options = ['Option 1', 'Option 2', 'Option 3'];
-
-const showDropdown = () => {
-  DropdownModule.showDropdown(options);
-};
 
   return (
     <SafeAreaView style={styles.container}>
@@ -53,10 +48,6 @@ const showDropdown = () => {
             placeholder={'Enter Your Confirm Password'}
             otherStyle={styles.inputStyle}
           />
-          <TouchableOpacity onPress={() => showDropdown()}>
-            {/* <DropdownModule showDropdown={[1,2,3,4,5]} /> */}
-            <Text>Hello</Text>
-          </TouchableOpacity>
         </View>
       </View>
       {!isKeyboardVisible && (

@@ -2,11 +2,11 @@ import React from 'react';
 import {View, TextInput, Text, StyleSheet} from 'react-native';
 import {FontAwesome} from '@expo/vector-icons'; // You can replace this with your desired icon library
 
-const CInput = ({label, placeholder, IsRightIcon, rightIcon, otherStyle}) => {
+const CInput = ({label, placeholder, IsRightIcon, rightIcon, otherStyle,inputStyle}) => {
   return (
     <View style={[styles.container, otherStyle]}>
-      <Text style={styles.label}>{label}</Text>
-      <View style={styles.inputContainer}>
+      <Text style={[styles.label,{display:label?'flex':'none'}]}>{label}</Text>
+      <View style={[styles.inputContainer,inputStyle]}>
         <TextInput
           style={styles.input}
           placeholder={placeholder}
