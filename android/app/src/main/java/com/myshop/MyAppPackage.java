@@ -22,7 +22,7 @@ public class MyAppPackage implements ReactPackage {
         List<NativeModule> modules = new ArrayList<>();
 
         modules.add(new ToasterModule(reactContext));
-
+        modules.add(new DropdownModule(reactContext));
         return modules;
     }
 
