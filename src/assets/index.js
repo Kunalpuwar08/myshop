@@ -1,2 +1,12 @@
 export const onBoardImg = require('./images/onboardImg.png');
-export const forgotImg = require('./images/forgotImg.png')
+export const forgotImg = require('./images/forgotImg.png');
+export const thumbnail = require('./images/thumbnailImg.png');
+export const thumbnail1 = require('./images/thumbnail1.png');
+export const thumbnail2 = require('./images/thumbnail2.png');
+export const thumbnail3 = require('./images/thumbnail3.png');
+export const thumbnail4 = require('./images/thumbnail4.png');
+export const thumbnail5 = require('./images/thumbnail5.png');
+export const p1 = require('./images/p1.png');
+export const p2 = require('./images/p2.png');
+export const p3 = require('./images/p3.png');
+export const p4 = require('./images/p4.png');
